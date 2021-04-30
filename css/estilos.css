@@ -272,7 +272,7 @@ a i {
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:569px) {
     .otros-procutos {
         justify-content: center;
     }
