@@ -134,6 +134,11 @@ nav .menuItems {
     justify-content: center;
 }
 
+.productosNuevos {
+    margin: 5px;
+    box-shadow: 0px 6px 3px black;
+}
+
 .productosNuevos,
 .otros {
     display: flex;
