@@ -265,4 +265,7 @@ a i {
     form input {
         margin-bottom: 20px;
     }
+    .otros-procutos {
+        justify-content: center;
+    }
 }
