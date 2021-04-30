@@ -1,0 +1,268 @@
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+nav .menuItems {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.enlacesProductos {
+    padding: 5px 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.enlaces {
+    padding: 5px 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Coda Caption', sans-serif;
+    transition: .9s;
+}
+
+.enlaces:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.enlacesProductos:hover {
+    text-decoration: underline;
+}
+
+.menu-responsive {
+    font-size: 35px;
+    color: black;
+    display: none;
+}
+
+.menu-responsive i {
+    cursor: pointer;
+}
+
+.contenido {
+    border-top: 6px solid orange;
+    margin-top: 40px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promociones {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.productPrincipal {
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.productPrincipal img,
+.productsSecundario img,
+.productsTerciario img,
+.producto4 img,
+.productosNuevos img,
+.otros img {
+    width: 100%;
+}
+
+.productsSecundario {
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.productsTerciario {
+    text-align: center;
+    grid-column: 1/2;
+}
+
+.producto4 {
+    grid-column: 2/4;
+    text-align: center;
+}
+
+.productos-nuevos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos-nuevos,
+.otrosProductos,
+.marcas {
+    border-top: 6px solid orange;
+    margin-top: 40px;
+}
+
+.otrosProductos {
+    display: flex;
+    flex-direction: column;
+}
+
+.otros-procutos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos-nuevos h2,
+.otrosProductos h2,
+.marcas h2,
+.footer h3 {
+    padding-top: 7px;
+    font-family: 'Coda Caption', sans-serif;
+    text-align: center;
+}
+
+.linea-productos-nuevos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productosNuevos,
+.otros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.otros:hover {
+    box-shadow: 1px 1px 9px black;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    margin-left: 3px;
+    font-size: 15px;
+}
+
+footer .redesyEnlaces {
+    margin-top: 20px;
+    border-top: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.enlacesRecientes {
+    display: flex;
+    flex-direction: column;
+}
+
+.enlacesRecientes a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.enlacesRecientes a:hover {
+    text-decoration: underline;
+}
+
+.iconosRedes {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.iconosRedes a {
+    color: black;
+    text-decoration: none;
+}
+
+a i {
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+/*Media screen*/
+
+@media screen and (max-width:968px) {
+    .promociones {
+        grid-template-columns: 100%;
+    }
+    .productPrincipal {
+        grid-column: 1/2;
+    }
+    .productsSecundario {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .productsSecundario img {
+        max-width: 300px;
+    }
+    .productsTerciario img {
+        max-width: 200px;
+    }
+    .producto4 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+}
+
+@media screen and (max-width:770px) {
+    nav .menuItems {
+        display: none;
+    }
+    .menu-responsive {
+        display: flex;
+        justify-content: center;
+    }
+    .showResponsive {
+        height: 100vh;
+        background-color: orange;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        text-align: center;
+    }
+    .showResponsive a {
+        margin: 2px 0px;
+        padding: 20px 5px;
+    }
+    .showResponsive a:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, .9);
+    }
+}
+
+@media screen and (max-width:395px) {
+    form {
+        flex-direction: column;
+        justify-content: center;
+    }
+    form input {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,154 @@
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+nav .menuItems {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.enlacesProductos {
+    padding: 5px 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.enlaces {
+    padding: 5px 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Coda Caption', sans-serif;
+    transition: .9s;
+}
+
+.enlaces:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.enlacesProductos:hover {
+    text-decoration: underline;
+}
+
+.menu-responsive {
+    font-size: 35px;
+    color: black;
+    display: none;
+}
+
+.menu-responsive i {
+    cursor: pointer;
+}
+
+.contenido {
+    margin-top: 40px;
+    border-top: 6px solid orange;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto 1fr;
+}
+
+.categorias {
+    background-color: orange;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 250px));
+}
+
+.categorias h4 {
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Coda Caption', sans-serif;
+    justify-self: center;
+    align-self: center;
+}
+
+.categorias h4:hover {
+    text-decoration: underline;
+}
+
+.catalogo {
+    gap: 20px;
+    padding: 15px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 250px));
+    justify-content: center;
+}
+
+.productosCatalogo {
+    text-align: center;
+    justify-self: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: .7s;
+}
+
+.productosCatalogo img {
+    width: 100%;
+}
+
+.productosCatalogo:hover {
+    box-shadow: 1px 1px 4px black;
+    transform: scale(1.1);
+}
+
+.productosCatalogo img {
+    width: 100%;
+}
+
+
+/*Media screen*/
+
+@media screen and (max-width:770px) {
+    nav .menuItems {
+        display: none;
+    }
+    .menu-responsive {
+        display: flex;
+        justify-content: center;
+    }
+    .showResponsive {
+        height: 100vh;
+        background-color: orange;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        text-align: center;
+    }
+    .showResponsive a {
+        margin: 2px 0px;
+        padding: 20px 5px;
+    }
+    .showResponsive a:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, .9);
+    }
+}
+
+@media screen and (max-width:1119px) {
+    .categorias {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .catalogo {
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+}
