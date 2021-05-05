@@ -116,7 +116,8 @@ nav .menuItems {
 .otros-procutos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    column-gap: 55px;
 }
 
 .productos-nuevos h2,
@@ -136,7 +137,13 @@ nav .menuItems {
 
 .productosNuevos {
     margin: 5px;
-    box-shadow: 0px 6px 3px black;
+    border-radius: 130px;
+    padding: 4px;
+}
+
+.productosNuevos:hover {
+    box-shadow: 0 2px 1px black;
+    cursor: pointer;
 }
 
 .productosNuevos,
